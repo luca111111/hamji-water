@@ -8,7 +8,6 @@ const HomePage = lazy(() => import("./HomePage"));
 const About = lazy(() => import("./pages/About"));
 const MapInfo = lazy(() => import("./pages/MapInfo"));
 const Delivery = lazy(() => import("./pages/delivery"));
-const StoreDetail = lazy(() => import("./pages/delivery/[id]"));
 const NearbyPage = lazy(() => import("./pages/nearby/NearbyPage"));
 
 // 프로그램 탭 구조
@@ -28,7 +27,6 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/map-info" element={<MapInfo />} />
           <Route path="/delivery" element={<Delivery />} />
-          <Route path="/delivery/:id" element={<StoreDetail />} />
           <Route path="/nearby" element={<NearbyPage />} />
 
           {/* 프로그램 탭 라우팅 구조 */}
