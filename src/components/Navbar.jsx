@@ -15,10 +15,10 @@ const MENU_ITEMS = [
     key: "program",
     label: "프로그램",
     links: [
-      { to: "/stage", label: "무대프로그램" },
-      { to: "/water", label: "물놀이프로그램" },
-      { to: "/experience", label: "부대프로그램" },
-      { to: "/rest", label: "휴식존" },
+      { to: "/program/stage", label: "무대프로그램" },
+      { to: "/program/water", label: "물놀이프로그램" },
+      { to: "/program/experience", label: "부대프로그램" },
+      { to: "/program/rest", label: "휴식존" },
     ],
   },
 ];

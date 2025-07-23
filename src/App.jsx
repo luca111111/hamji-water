@@ -30,12 +30,13 @@ export default function App() {
           <Route path="/delivery/:id" element={<StoreDetail />} />
 
           {/* 프로그램 탭 라우팅 구조 */}
-          <Route path="/program" element={<ProgramLayout />}>
-            <Route path="stage" element={<Stage />} />
-            <Route path="water" element={<Water />} />
-            <Route path="experience" element={<Experience />} />
-            <Route path="rest" element={<Rest />} />
-          </Route>
+        <Route path="/program" element={<ProgramLayout />}>
+          <Route index element={<Stage />} />       {/* 기본 탭 */}
+          <Route path="stage" element={<Stage />} />
+          <Route path="water" element={<Water />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="rest" element={<Rest />} />
+        </Route>
         </Routes>
       </Suspense>
       <Footer />
