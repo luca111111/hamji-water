@@ -127,8 +127,6 @@ export default function HomePage() {
       >
         ↑
       </button>
-
-      <Footer />
     </div>
   );
 }
