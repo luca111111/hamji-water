@@ -1,0 +1,1 @@
+import{r as t,j as r}from"./index-IrAwYowN.js";function n({children:e}){const[s,a]=t.useState(!1);return t.useEffect(()=>{const o=setTimeout(()=>{a(!0)},100);return()=>clearTimeout(o)},[]),r.jsx("div",{className:`transition-opacity duration-1000 ${s?"opacity-100":"opacity-0"}`,children:e})}export{n as F};

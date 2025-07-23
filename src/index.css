@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'hamji';
+  src: url('/fonts/hamji.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-hamji {
+  font-family: 'hamji', sans-serif;
+}
+@keyframes scrollBanner {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll-banner {
+  animation: scrollBanner 15s linear infinite;
+}
