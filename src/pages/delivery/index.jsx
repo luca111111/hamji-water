@@ -46,9 +46,10 @@ export default function DeliveryPage() {
                 />
                 <span className="font-semibold text-gray-900">{store.name}</span>
               </div>
-
               <a
-                href={`tel:${store.phone}`}
+                href={store.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="ml-4 bg-[#02C2C7] hover:bg-[#0199a0] text-white text-sm font-bold py-1 px-4 rounded-full"
               >
                 주문하기
