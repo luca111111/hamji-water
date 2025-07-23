@@ -6,7 +6,6 @@ import Ready from "./components/Ready";
 import Banner from "./components/Banner";
 import About from "./pages/About";
 import DeliveryPage from "./pages/delivery";
-import StoreDetail from "./pages/delivery/[id]";
 import MapInfo from "./pages/MapInfo";
   
 export default function HomePage() {
@@ -91,7 +90,6 @@ export default function HomePage() {
           <Route path="/rest" element={<Ready />} />
           <Route path="/map-info" element={<MapInfo />} />
           <Route path="/delivery" element={<DeliveryPage />} />
-          <Route path="/delivery/:id" element={<StoreDetail />} />
         </Routes>
       </Suspense>
 
