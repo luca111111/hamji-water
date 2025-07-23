@@ -35,7 +35,7 @@ export default function DeliveryPage() {
                 ))}
             </div>
 
-            <p className="mt-3 text-gray-700 text-sm italic">{store.description}</p>
+            <p className="mt-3 text-gray-700 text-sm">{store.description}</p>
 
             <div className="flex items-center justify-between mt-5">
               <div className="flex items-center space-x-3">
