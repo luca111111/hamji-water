@@ -10,7 +10,7 @@ const tabs = [
 
 export default function ProgramLayout() {
   return (
-    <div className="pt-20 px-4">
+    <div className="pt-28 px-4">
       <div className="flex justify-center gap-2 mb-6 flex-wrap">
         {tabs.map((tab) => (
           <NavLink
