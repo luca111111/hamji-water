@@ -15,7 +15,7 @@ const ProgramLayout = lazy(() => import("./pages/program/ProgramLayout"));
 const Stage = lazy(() => import("./pages/program/Stage"));
 const Water = lazy(() => import("./pages/program/Water"));
 const Experience = lazy(() => import("./pages/program/Experience"));
-const Rest = lazy(() => import("./pages/program/Rest"));
+const Unit = lazy(() => import("./pages/program/Unit"));
 
 export default function App() {
   return (
@@ -35,7 +35,7 @@ export default function App() {
           <Route path="stage" element={<Stage />} />
           <Route path="water" element={<Water />} />
           <Route path="experience" element={<Experience />} />
-          <Route path="rest" element={<Rest />} />
+          <Route path="unit" element={<Unit />} />
         </Route>
         </Routes>
       </Suspense>

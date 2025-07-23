@@ -17,8 +17,8 @@ const MENU_ITEMS = [
     links: [
       { to: "/program/stage", label: "무대프로그램" },
       { to: "/program/water", label: "물놀이프로그램" },
-      { to: "/program/experience", label: "부대프로그램" },
-      { to: "/program/rest", label: "휴식존" },
+      { to: "/program/experience", label: "체험프로그램" },
+      { to: "/program/unit", label: "부대프로그램" },
     ],
   },
 ];
