@@ -1,83 +1,62 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
-function shuffleArray(array) {
-  return array
-    .map(value => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value);
-}
+import React, { useEffect, useState } from "react";
 
 export default function DeliveryPage() {
   const [stores, setStores] = useState([]);
 
   useEffect(() => {
-    fetch('/data/stores.json')
+    fetch("/data/stores.json")
       .then(res => res.json())
-      .then(data => setStores(shuffleArray(data)));
+      .then(data => setStores(data));
   }, []);
 
   return (
-      <div className="pt-[85px] px-4 space-y-10 bg-gradient-to-b from-sky-50 to-white min-h-screen">
-      {/* 🟦 상단 배너 */}
-      <div className="w-full overflow-hidden rounded-xl shadow mb-6">
-        <img src="/market.jpg" alt="배너" className="w-full object-cover" />
-      </div>
+    <div className="pt-[80px] px-4 bg-white min-h-screen">
+      <h1 className="text-2xl font-bold text-blue-600 text-center mb-6 font-hamji">함지배달</h1>
 
-      <h1 className="text-2xl font-bold text-center text-blue-600 font-hamji">배달 가능한 맛집 리스트</h1>
+      <p className="text-sm text-gray-600 text-center max-w-md mx-auto mb-6 leading-relaxed">
+        '배달의민족'으로 바로 연결됩니다. <br />
+        바로결제 시 배송지를 <strong>운영본부</strong>로 시키시면 별도의 배달기사님과의 만남 없이 빠르게 운영본부에서 픽업 가능합니다!<br />
+        <strong>만나서 결제</strong> 시에는 배달기사님 도착 시 결제해주셔야 합니다.
+      </p>
 
-      {stores.map(store => (
-        <div key={store.id} className="bg-white rounded-2xl shadow-xl p-4 border border-blue-100">
-          <div className="overflow-x-auto whitespace-nowrap pb-2">
-            {store.images.map((src, idx) => (
-              <img
-                key={idx}
-                src={src}
-                alt={`${store.name} 메뉴 ${idx + 1}`}
-                className="inline-block rounded-xl mr-3 border border-gray-200"
-                style={{ width: '180px', height: '180px', objectFit: 'cover' }}
-              />
-            ))}
-          </div>
-          <p className="mt-3 text-gray-700 text-sm italic">{store.description}</p>
-          <div className="flex items-center justify-between mt-5">
-            <div className="flex items-center space-x-3">
-              <img
-                src={store.logo}
-                alt="로고"
-                className="rounded-full border object-cover"
-                style={{ width: '52px', height: '52px' }}
-              />
-              <Link to={`/delivery/${store.id}`} className="text-xl font-extrabold text-blue-700 hover:underline">
-                {store.name}
-              </Link>
+      <div className="space-y-8">
+        {stores.map(store => (
+          <div key={store.id} className="p-4 border rounded-lg shadow-sm">
+            <div className="overflow-x-auto whitespace-nowrap pb-2 flex gap-2">
+              {Array.isArray(store.images) &&
+                store.images.map((src, idx) => (
+                  <img
+                    key={idx}
+                    src={src}
+                    alt={`${store.name} 메뉴 ${idx + 1}`}
+                    className="h-24 w-24 object-cover rounded"
+                  />
+                ))}
             </div>
-            <div className="flex items-center space-x-1">
-              {['card', 'cash', 'wire'].map(type => (
-                <span
-                  key={type}
-                  title={type === 'card' ? '카드결제' : type === 'cash' ? '현금결제' : '계좌이체'}
-                  className={`w-7 h-7 rounded-full border flex items-center justify-center text-xs font-bold shadow-sm ${
-                    store.payments.includes(type) ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-400'
-                  }`}
-                >
-                  {type === 'card' ? '카' : type === 'cash' ? '현' : '이'}
-                </span>
-              ))}
-              <a href={`tel:${store.phone}`} className="ml-4 px-4 py-2 bg-blue-500 text-white rounded-full shadow hover:bg-blue-600 text-sm font-semibold">
-                전화주문
+
+            <p className="mt-3 text-gray-700 text-sm italic">{store.description}</p>
+
+            <div className="flex items-center justify-between mt-5">
+              <div className="flex items-center space-x-3">
+                <img
+                  src={store.logo}
+                  alt="로고"
+                  className="rounded-full border object-cover w-10 h-10"
+                />
+                <span className="font-semibold text-gray-900">{store.name}</span>
+              </div>
+
+              <a
+                href={`tel:${store.phone}`}
+                className="ml-4 bg-[#02C2C7] hover:bg-[#0199a0] text-white text-sm font-bold py-1 px-4 rounded-full"
+              >
+                주문하기
               </a>
             </div>
           </div>
-        </div>
-      ))}
-
-      {/* 🟫 안내 문구 */}
-      <p className="text-xs text-gray-500 text-center mt-10 px-4">
-        ※ 본 사이트는 행사 진행중 동네상권 활성화를 위하여 별도의 운영비 없이 운영되며,<br />
-        가게와 통화 연결하여 사용 가능합니다.<br />
-        배달 또는 주문 중 문제 또는 궁금한 점은 해당 가게에 문의해주시기 바랍니다.
-      </p>
+        ))}
+      </div>
     </div>
   );
 }
