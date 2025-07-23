@@ -8,7 +8,7 @@ import About from "./pages/About";
 import DeliveryPage from "./pages/delivery";
 import StoreDetail from "./pages/delivery/[id]";
 import MapInfo from "./pages/MapInfo";
-
+  
 export default function HomePage() {
   const [showSplash, setShowSplash] = useState(false);
   const [nextRoute, setNextRoute] = useState(null);
