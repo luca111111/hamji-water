@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -62,7 +61,10 @@ export default function Navbar() {
             <div key={item.key} className="py-2">
               <span
                 onClick={() => toggleDropdown(item.key)}
-                className={`cursor-pointer font-hamji text-lg flex justify-between items-center ${activeDropdown === item.key ? "text-[#02C2C7] font-bold" : ""}`}
+                className={
+                  "cursor-pointer font-hamji text-lg flex justify-between items-center " +
+                  (activeDropdown === item.key ? "text-[#02C2C7] font-bold" : "")
+                }
               >
                 {item.label} <span>{activeDropdown === item.key ? "▲" : "▼"}</span>
               </span>
@@ -82,6 +84,13 @@ export default function Navbar() {
               )}
             </div>
           ))}
+          <Link
+            to="/nearby"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-left py-2 font-hamji text-lg"
+          >
+            함지맛지도(근처맛집)
+          </Link>
           <Link
             to="/delivery"
             onClick={() => setMobileMenuOpen(false)}

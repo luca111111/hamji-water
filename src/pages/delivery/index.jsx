@@ -11,7 +11,7 @@ export default function DeliveryPage() {
   }, []);
 
   return (
-    <div className="pt-[80px] px-4 bg-white min-h-screen">
+    <div className="pt-[89px] px-4 bg-white min-h-screen">
       <h1 className="text-2xl font-bold text-blue-600 text-center mb-6 font-hamji">함지배달</h1>
 
       <p className="text-sm text-gray-600 text-center max-w-md mx-auto mb-6 leading-relaxed">

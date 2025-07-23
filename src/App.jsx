@@ -8,6 +8,8 @@ const HomePage = lazy(() => import("./HomePage"));
 const About = lazy(() => import("./pages/About"));
 const MapInfo = lazy(() => import("./pages/MapInfo"));
 const Delivery = lazy(() => import("./pages/delivery"));
+const StoreDetail = lazy(() => import("./pages/delivery/[id]"));
+const NearbyPage = lazy(() => import("./pages/nearby/NearbyPage"));
 
 // 프로그램 탭 구조
 const ProgramLayout = lazy(() => import("./pages/program/ProgramLayout"));
@@ -26,15 +28,17 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/map-info" element={<MapInfo />} />
           <Route path="/delivery" element={<Delivery />} />
+          <Route path="/delivery/:id" element={<StoreDetail />} />
+          <Route path="/nearby" element={<NearbyPage />} />
 
           {/* 프로그램 탭 라우팅 구조 */}
-        <Route path="/program" element={<ProgramLayout />}>
-          <Route index element={<Stage />} />       {/* 기본 탭 */}
-          <Route path="stage" element={<Stage />} />
-          <Route path="water" element={<Water />} />
-          <Route path="experience" element={<Experience />} />
-          <Route path="unit" element={<Unit />} />
-        </Route>
+          <Route path="/program" element={<ProgramLayout />}>
+            <Route index element={<Stage />} />
+            <Route path="stage" element={<Stage />} />
+            <Route path="water" element={<Water />} />
+            <Route path="experience" element={<Experience />} />
+            <Route path="unit" element={<Unit />} />
+          </Route>
         </Routes>
       </Suspense>
       <Footer />

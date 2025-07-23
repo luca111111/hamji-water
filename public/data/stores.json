@@ -3,30 +3,16 @@
     "id": "store1",
     "name": "택치킨",
     "logo": "https://mblogthumb-phinf.pstatic.net/20160507_185/ppanppane_1462549491273dSctQ_PNG/Untitled-1-27.png?type=w800",
-    "phone": "010-2144-3344",
-    "images": [
-      "https://www.bhc.co.kr/upload/bhc/menu/HOT%ED%9B%84%EB%9D%BC%EC%9D%B4%EB%93%9C_%EC%BD%A4%EB%B3%B4_410x271.jpg",
-      "https://i.namu.wiki/i/D6sU0QSqed_BoNmDzffIvqhkPWCWFf8fTiWacrqbGmk7i1Rlaw1HdwhkILJsStyHM8gmxiQ6qP1pgIKrcE34jg.webp",
-      "https://www.ejadam.co.kr/theme/creasor_renew/img/main/best-menu12.jpg",
-      "https://i.ytimg.com/vi/cuXEXZvxBp8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAkETFMsr0Sp-eMw8vJSTSMhf5Dgw",
-      "https://www.hansik.or.kr/files/magazine/uploads/oldimg/202009/ca0e25673bc25f8416115fc98f2cfc7a_crop.jpg?t=174c32669e9"
-    ],
-    "payments": ["card", "cash", "wire"],
+    "link": "https://www.baemin.com/store1", 
+    "images": [ "이미지1", "이미지2"],
     "description": "바삭한 후라이드 치킨과 매콤한 양념치킨을 자랑하는 태그치킨입니다."
   },
   {
     "id": "store2",
     "name": "커피",
     "logo": "https://www.monster-coffee.com/assets/images/new/fran-list_02.jpg",
-    "phone": "053-253-0515",
-    "images": [
-      "https://www.monster-coffee.com/upload/menu_all/202306/1686637637_m0176217_20230613152717.png",
-      "https://www.monster-coffee.com/upload/menu_all/202306/1686639107_m0170816_20230613155147.png",
-      "https://www.monster-coffee.com/upload/menu_all/202306/1686639132_m0164562_20230613155212.png",
-      "https://www.monster-coffee.com/upload/menu_all/202402/1707873400_m0166035_20240214101640.png",
-      "https://www.monster-coffee.com/upload/menu_all/202502/1738801628_m0124059_20250206092708.png"
-    ],
-    "payments": ["cash", "wire"],
+    "link": "https://www.baemin.com/store2",
+    "images": [ "이미지1", "이미지2"],
     "description": "뜨거운 여름 시원한 한잔 몬스터커피 함지공원점 입니다."
   }
 ]
