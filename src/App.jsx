@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import PopupBanner from "./components/PopupBanner";
 
 // 메인 페이지들
 const HomePage = lazy(() => import("./HomePage"));
@@ -20,6 +21,7 @@ const Unit = lazy(() => import("./pages/program/Unit"));
 export default function App() {
   return (
     <BrowserRouter>
+      <PopupBanner />
       <Navbar />
       <Suspense fallback={<div className="p-10 text-center">로딩 중...</div>}>
         <Routes>
