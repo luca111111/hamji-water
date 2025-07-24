@@ -30,6 +30,9 @@ export default function About() {
               <strong>🤝 주관:</strong> 구암동행정복지센터｜구암동주민자치위원회
             </li>
             <li>
+              <strong>✨ 후원:</strong> 대구광역시
+            </li>
+            <li>
               <strong>📞 문의:</strong> 053-665-3321
             </li>
           </ul>
