@@ -2,17 +2,88 @@
   {
     "id": "store1",
     "name": "서민피자 칠곡점",
+    "category": "피자,파스타",
     "logo": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20201223_226%2F1608696292976WbXIR_PNG%2FcmwJXrGF8z39qWS06bZTqU1y.png",
-    "link": "https://s.baemin.com/qS000hGzcrsvT", 
-    "images": [ "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190128_65%2F1548601388806CvEEo_JPEG%2F7itnKW354W1EopBKMg31PGEp.jpeg.jpg", "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMzA1MTNfMTQy%2FMDAxNjgzOTc2NzA3MTA1.KseyoNjY8ziBMqDFBHgizTD5J5S0NWSrKPjHN5Xim18g.blZ41o6bbp-SU_VDZx54cf3t1M_GrP1iwaqutG-HrFEg.JPEG%2F20230513_193501.jpg%3Ftype%3Dw1500_60_sharpen", "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTAzMTVfMjEz%2FMDAxNzQxOTk1NjE1Mjc0.dLQPCj3Mf0jwRD5MARpD0XNfQi1NK6UF0FJLwQWqcYog.G84o0cZlq3DiW_eNSi6UMFOXO6TrIWHFwV40w6Wv49Ag.JPEG%2FKakaoTalk_20250315_080958446_01.jpg","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAyMTlfMjIw%2FMDAxNjc2ODEyNzY1Mjc0.zb9wsrnKFokWPJlPeG0Mi4LiDsOt4lSZr4ObUP9WdJsg.gNisIoNDHIccA_OdPp2cycA6aruM6Pqm2h0pZLeeTqAg.JPEG.oeoco%2FKakaoTalk_20230219_221113203.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMzEwMjVfMjcy%2FMDAxNjk4MTgwNDY5NzEw.H4qQ0_i8d4CDJzGIz82fpLzgBzxjRh4utjfOAqATO78g.VHl7pnKH08WqrcE0xU1xoRcZEm7_J4xhHW3v2E_5wzgg.JPEG%2Fupload_dd7079e47d8945098303f92cd49e6c48.jpeg%3Ftype%3Dw1500_60_sharpen"],
+    "link": "https://s.baemin.com/qS000hGzcrsvT",
+    "images": [
+      "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190128_65%2F1548601388806CvEEo_JPEG%2F7itnKW354W1EopBKMg31PGEp.jpeg.jpg",
+      "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMzA1MTNfMTQy%2FMDAxNjgzOTc2NzA3MTA1.KseyoNjY8ziBMqDFBHgizTD5J5S0NWSrKPjHN5Xim18g.blZ41o6bbp-SU_VDZx54cf3t1M_GrP1iwaqutG-HrFEg.JPEG%2F20230513_193501.jpg%3Ftype%3Dw1500_60_sharpen",
+      "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTAzMTVfMjEz%2FMDAxNzQxOTk1NjE1Mjc0.dLQPCj3Mf0jwRD5MARpD0XNfQi1NK6UF0FJLwQWqcYog.G84o0cZlq3DiW_eNSi6UMFOXO6TrIWHFwV40w6Wv49Ag.JPEG%2FKakaoTalk_20250315_080958446_01.jpg",
+      "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAyMTlfMjIw%2FMDAxNjc2ODEyNzY1Mjc0.zb9wsrnKFokWPJlPeG0Mi4LiDsOt4lSZr4ObUP9WdJsg.gNisIoNDHIccA_OdPp2cycA6aruM6Pqm2h0pZLeeTqAg.JPEG.oeoco%2FKakaoTalk_20230219_221113203.jpg",
+      "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMzEwMjVfMjcy%2FMDAxNjk4MTgwNDY5NzEw.H4qQ0_i8d4CDJzGIz82fpLzgBzxjRh4utjfOAqATO78g.VHl7pnKH08WqrcE0xU1xoRcZEm7_J4xhHW3v2E_5wzgg.JPEG%2Fupload_dd7079e47d8945098303f92cd49e6c48.jpeg%3Ftype%3Dw1500_60_sharpen"
+    ],
     "description": "가성비 좋은 푸짐한 피자를 즐길 수 있는 칠곡 대표 서민피자!"
   },
   {
     "id": "store2",
-    "name": "커피",
-    "logo": "https://www.monster-coffee.com/assets/images/new/fran-list_02.jpg",
-    "link": "https://www.baemin.com/store2",
-    "images": [ "이미지1", "이미지2"],
-    "description": "뜨거운 여름 시원한 한잔 몬스터커피 함지공원점 입니다."
+    "name": "세컨더리",
+    "category": "피자,파스타",
+    "logo": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250103_103%2F1735897061528qxeaR_PNG%2F1.png",
+    "link": "https://s.baemin.com/iE000n5UWBoi5",
+    "images": ["https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250103_83%2F1735878718194nPaxI_JPEG%2FDSC01174.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250103_286%2F1735897061540zUgYk_PNG%2F3.png","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTA3MjRfMTE2%2FMDAxNzUzMzI1NDIxNDY5.5vW2e0IoAui5z7HfBHMLMfx8-Gfy2S5TdJtcv-nCF6Yg.BQAyVvbBOdxRwihRctV1kg_VlylV6Xb0jeNjYHV8pqYg.JPEG%2F20250724_114625.jpg%3Ftype%3Dw1500_60_sharpen","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTA3MjRfMTAy%2FMDAxNzUzMzI1Mzc1MjY2.WmEZCm7VKrhbSvjjxXFl1e4rZmy1IoIeiBvJmDND6xMg.X_Pq0KUPlQ7HWfPH1BrPdrC9kSFZos_DtA-_fav505cg.JPEG%2F20250724_114628.jpg%3Ftype%3Dw1500_60_sharpen","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA3MDZfMjQ2%2FMDAxNzUxNzkxMTA0MDI1.GIvVIS8Imy4Y3tl64AZY7VMeBrIfoyPiWsjjSno7qy4g.jfn9GwDrG28_tP7C7y6G4ze2bSt0WdBa0mgXnaYSetYg.JPEG%2FIMG%25A3%25DF4652.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250103_71%2F1735897061439FFwqn_JPEG%2F4.jpg"],
+    "description": "세컨더리 칠곡3지구점은 브런치 맛집으로, 에그베네딕트와 에그인헬이 특히 인기가 많습니다."
+  },
+  {
+    "id": "store3",
+    "name": "푸라닭 구암동천점",
+    "category": "치킨",
+    "logo": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220110_141%2F1641785490180kSj1z_JPEG%2F%25C7%25AA%25B6%25F3%25B4%25DF_%25B7%25CE%25B0%25ED.jpg",
+    "link": "https://s.baemin.com/uQ000f4zoBk6N",
+    "images": ["https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMDFfMjky%2FMDAxNjY5ODY5OTgzMjM2.8s09yxgJGlmlRSUyE7Lftr7qISeDHyFqGg3xnkgUhTcg.c944jWKG3mSazScOZALYBXhiHWE6dnSHu_78s-VuWhEg.JPEG.ddd0093%2FKakaoTalk_20221130_134616737_08.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMzA3MDVfMTY1%2FMDAxNjg4NTIxMzk5MjI1.JeKdZdn2SICYWTuIYXh8EhLXUEPKcfLsaHFhEQh8zvsg.VPeA17H5i51ZJs2b8j0V6EZNlEn7RNoVOKLWqNWo-9Ug.JPEG%2FC1B9ED0A-FD49-4337-AC83-142E18F17284.jpeg%3Ftype%3Dw1500_60_sharpen","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA2MTNfMTk0%2FMDAxNzE4Mjg1NzgwMDU3.2zzdUfYMDLdpJ4KeV4yF5MOb3h3DlSbLwPH_m-xefNQg.6CLFs_1Q0WOnhmgE_MpblnVFaN3KL0mvm6LzCGy3FiAg.JPEG%2FKakaoTalk_20240609_230952583_06.jpg","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA2MTNfMTcw%2FMDAxNzE4Mjg1NzgwMDEy.z4eYeiFrqi5lxtKdAbjAGVHlPgdaH7CNAjLFVq9IKPMg.cAE6AsaJLcjhp9GHWRw7glBUyesS6U-Xr6ZRu-xpjEkg.JPEG%2FKakaoTalk_20240609_230952583_01.jpg","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA2MTNfNTkg%2FMDAxNzE4Mjg1NzgwMDcx.PfRKLZgOr85Rg8sgc3QRS_eXHlEHi_vPDseVKFEN1q4g.iPcfcYwYxK1yeZTz-705bkNFgLC0P_MJ_x7B2WM2Bsgg.JPEG%2FKakaoTalk_20240609_230952583_04.jpg"],
+    "description": "오늘은 치킨이닭! 식약처 인증 위생등급 좋음 음식점!"
+  },
+  {
+    "id": "store4",
+    "name": "처갓집양념치킨 국우점",
+    "category": "치킨",
+    "logo": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200120_298%2F1579504110347tJgty_JPEG%2FC_lo6OmP2LbyOHVZh-W2FOtu.jpg",
+    "link": "https://s.baemin.com/Kp000gdxKHE1G",
+    "images": ["https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250320_127%2F1742430588209wxFk3_JPEG%2F%25B2%25BF%25B2%25BF%25B9%25F0_%25C6%25F7%25BD%25BA%25C5%25CD.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220318_194%2F1647577023354ua2Ck_JPEG%2F%25B1%25D7%25B8%25B2123.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210224_184%2F1614131949597n2jvu_JPEG%2FeziRgNzFnLQciMf7bJylg-gh.jpg","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MTFfMTg3%2FMDAxNzI1OTg2ODQ5OTE1.6tbBTRMu10-UDJSWEpl61vtlVDzR9VAf0Ol4W3OSLHAg.1oWGhHZPZdbEFU-gnGKz3GYAIL4ezPahekBPDhlpmSYg.JPEG%2F20240911_014636.jpg","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MjlfOTIg%2FMDAxNjE5Njg1MjE4OTc5.TPJSaf-JSaap4iuUgEHv8vFy2X10IGa7s_od4_31Qpwg.gEMK3CuMxxYTk0jUnaLW3quX5flXiPWA9jOFp7I_vVog.JPEG.gurdyd0927%2FKakaoTalk_20210417_191946532_02.jpg"],
+    "description": "매콤달콤한 시그니처 양념의 정석, 언제 먹어도 맛있는 처갓집 양념치킨!"
+  },
+  {
+    "id": "store5",
+    "name": "몽짬뽕 칠곡점",
+    "category": "짜장,짬뽕",
+    "logo": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240429_191%2F17143734419659cysO_PNG%2F20240424_155841.png",
+    "link": "https://s.baemin.com/q2000fPiFrd1D",
+    "images": ["https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240429_60%2F1714373449604IbC8t_JPEG%2F20240424_150149.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240429_97%2F1714373458631fWvKb_JPEG%2F20240424_145306.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTA3MDVfMTk4%2FMDAxNzUxNjk3MjUwNDIz.zX53JxGw49e8LHj32m7Ql2q9LX31ZIn05vtaxL5raN4g.XKyMytlj5pnhc6VLFzJqw4wmAMdyAziWThfAKelv0Bgg.JPEG%2F20250705_133227.jpg%3Ftype%3Dw1500_60_sharpen","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTAzMTdfNjAg%2FMDAxNzQyMjAxOTEzMzk5.FmfaGN3yDDg66YiEotV5Wt2T3U13p_JgS7dqGPiVWsQg.mklDyAe6PGUhrNHCl5WaJdxzZsiWMKQNCVsGuwyxyWcg.JPEG%2Foutput_1241835602.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA2MTVfMTc1%2FMDAxNzE4NDI0ODk0MzIy.OB9ueGH4UT0Z1dr6qicZByyxdChFLdYB6vo3nN1nvjkg.DkUW_HipycNwXvDnlZ36eKaOGjgQctW-wX1fENW-564g.JPEG%2F2C9D6833-5C8B-4DD2-8CFB-B63355F96E60.jpeg%3Ftype%3Dw1500_60_sharpen"],
+    "description": "진한 불향 가득한 얼큰한 국물! 중독성 강한 몽짬뽕 칠곡점의 매운맛 도전!"
+  },
+  {
+    "id": "store6",
+    "name": "은하성",
+    "category": "짜장,짬뽕",
+    "logo": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170104_232%2F1483526378497MWgaD_JPEG%2F186054596957589_0.jpeg",
+    "link": "https://s.baemin.com/Eg000fAjKjJl3",
+    "images": ["https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTAyMjdfODUg%2FMDAxNzQwNjE1MDcyMDA3.GtYtGuPU9RnQE4DD9M9EZaJDrgQVhXq6vSG-yTl9DD8g.eM7nzaQtYzZn73D9V14WcLwY3yxkTzx-PnOimtBrtzYg.JPEG%2F900%25A3%25DF20250224%25A3%25DF182925.jpg","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAzMTJfNTcg%2FMDAxNjQ3MDI0MzAxMzky.PWO2-BD3etJwRDjwFczBcJ_g6xbXYhziTEH81zEWvhkg.2we1xsow-YDeNRSB7QWKoyJlonFFLTzs64i5gaLs4QIg.JPEG.pyj12041004%2FIMG_5740.jpg","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTAyMjdfMjI1%2FMDAxNzQwNjE1MjY2MTU5.WExma1548OuCppD6njWYOXQblusOYG2L4zVvoj4wR9Ig.F6ncQbmZNrMaHGIsC6fVQIZ_av9hKXDXnrIpJ2Ey2VUg.JPEG%2F900%25A3%25DF20250224%25A3%25DF182848.jpg","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA1MzBfMjc5%2FMDAxNzE3MDY2MzcxMTU4.XmCN-HwSODxYtcZ1vLYJboI3Mf56W6Rco5O6C7PppUMg.DcjWxdR_aRqQuhbmyLav498xQ1XfNX00KlaPacMZWmgg.JPEG%2F%25C0%25BA%25C7%25CF%25BC%25BA04.jpg","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA0MjRfNTEg%2FMDAxNjgyMzAzMDM2NzM5.4nc57KC5dqLqyKTvKQi7uKBo365qOJk1WbVbYRiwQcUg.awSdtOPXm3-wlQu5d8YUPCDiBFJQYonnSMr7_mfob20g.JPEG.yusungkjw%2F20230423%25A3%25DF132715.jpg"],
+    "description": "전통이 있는 깊은 맛! 옛날식 탕수육과 짜장면이 인기인 은하성 중화요리 전문점!"
+  },
+  {
+    "id": "store7",
+    "name": "리터킹 칠곡3지구점",
+    "category": "커피,음료",
+    "logo": "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA4MjZfMjE4%2FMDAxNzI0NjQ5NzQ3MTUx.hjP1-OKNkRY_8U-7gyErhJc6U_JSMjbV9eh1RtJd0yEg.3s2cYCPvB7Aq7JpCXJps0d_o12-YMQ-Lt5OoxihdVM0g.JPEG%2F1000024972.jpg.jpg%3Ftype%3Dw1500_60_sharpen",
+    "link": "https://s.baemin.com/bG000hp4OCWge",
+    "images": ["https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA2MjZfMzEg%2FMDAxNzE5Mzc2MDExMzYy.xhzGsj5p7KiL2f_dl0_Tl9OxERLUhovZQ8d-6gQTy9Qg.6P8dRXwoLVhDI27Qowo3tV6IiEcEvwkUdxoXOyo9Ahgg.JPEG%2F20240626%25A3%25DF131420.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA4MjZfODEg%2FMDAxNzI0NjQ5NzQ2NjQ1.4mKHiGy_1742PeVW6lhs7N9UynxPiWw-l48YTU_53KAg.iemh296LVz7hPyZY1UoBuom79vABQtFWrw5lE58qk0kg.JPEG%2F1000024977.jpg.jpg%3Ftype%3Dw1500_60_sharpen","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA3MDdfMjgg%2FMDAxNzIwMzM1OTk1Mzg3.YbNPQ2oZiO7P2aN6BfZUiEGm7KVioxCycgpRMkCjS8sg.U8Kii_VLDH3uRyCrez2dveufhlaBE879wV_Fph9bOE8g.JPEG%2F0F207465-EF84-422D-B212-D75EFA0E0577.jpeg%3Ftype%3Dw1500_60_sharpen","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA2MjZfMjY2%2FMDAxNzE5Mzc2NDcyMTk4.DPDpGvE9tFYEvpooBL57SQe0tIyzT6Rxl4hN2zMKbOkg.k3KyITv1cyjYh5H_H-ITu0n3XtHlOhfvpySn1idAVLYg.JPEG%2F20240626%25A3%25DF131556.jpg","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA2MDRfMjg5%2FMDAxNzE3NTA5ODk2MTcx.BViE5BLyzNFLkV7bB8lW0ht6UuPz6p_bPu-wjLh_Qisg.dgBS2ufGXx02t7UN151G7wVEetDIS_cN8n-mhQelsGIg.JPEG%2F20240604_130803.jpg"],
+    "description": "1리터의 시원한 행복! 가성비 넘치는 대용량 음료 리터킹 칠곡3지구점!"
+  },
+  {
+    "id": "store8",
+    "name": "컴포즈커피 국우점",
+    "category": "커피,음료",
+    "logo": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231226_34%2F1703573702793WLEnY_JPEG%2FKakaoTalk_20231226_155424829_02.jpg",
+    "link": "https://s.baemin.com/Ut000gGrzR8fG",
+    "images": ["https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231226_77%2F1703573702825D3AfI_JPEG%2FKakaoTalk_20231226_155424829_03.jpg","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MzBfMjM3%2FMDAxNzI3NjY2MTEwMjkw.3ictRsEFxtGufWwv2rpDdRRgTZLUxpz7zdYTs7dcP-Eg.dy5TYj6mNyZBkXB91eJO9KkmR5QF1QZDlCLXMztCPJMg.JPEG%2F20240929%25A3%25DF160631.jpg","https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA5MjlfMTg5%2FMDAxNzI3NTk5MzAyNDY2.OXA2QGpoYiEs8QlFJFcPVxmNxKcoUVzW0jLIlKhxPg8g.RySJ03KAFXrmsba84BbsTxcSQP-wm-YZVT2OU0gSch0g.JPEG%2F20240929%25A3%25DF161757.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDAxMTRfMTQ2%2FMDAxNzA1MTk4MzYwOTIz.lj4tFvn9NXeobeiGMM9Qmm9WUJrn0pqflCKFc9tXGe8g.uwADFe-UvHvDFrIUI6GGdUkGbv26eFRoMTLBhXdrmB0g.JPEG%2F20240114_103748.jpg.jpg%3Ftype%3Dw1500_60_sharpen","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDEwMTVfMTY3%2FMDAxNzI4OTgyMDE3NjYx.mDFV0y8bF_EhcKc8RV_VR3gD-lk7K6eBURLYZQE_jQAg.qCQQZQd0-y2PZDQEHqa3AeXDj8Xvyd49z2e7HIakhFAg.JPEG%2F0FD7E844-814A-4E9C-B080-83F224A676F0.jpeg%3Ftype%3Dw1500_60_sharpen","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTAxMDdfODcg%2FMDAxNzM2MjU3MDQ3MzMx.vkMxqTvVPs6aVL0g0mZn7-X44P9wOxu09BDVnpwiIXYg.afPTwg5UhGAqG-xELnaRKUOP6mEPjRnWpA6QvaCqbccg.JPEG%2F1000067805.jpg.jpg%3Ftype%3Dw1500_60_sharpen"],
+    "description": "합리적인 가격에 즐기는 고급 원두의 향기, 컴포즈커피 국우점에서 한 잔의 여유를!"
+  },
+  {
+    "id": "store9",
+    "name": "매스커피 칠곡3지구점",
+    "category": "커피,음료",
+    "logo": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA2MjVfMzAw%2FMDAxNTI5ODkzMjMwNzA5.Tg9qXAtfhGCKEH-cU1WcQyYa1bJ-hwKohjWyNua49T0g.UsTErayXbe5y03-S6CoHSHqX94gfbFw_r6uWMnkDymsg.JPEG.future_log%2FIMG_5289.JPG",
+    "link": "https://s.baemin.com/bQ000jo8FwkNi",
+    "images": ["https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250702_98%2F1751414625639DIUKE_JPEG%2F%25B8%25C5%25BD%25BA%25C4%25BF%25C7%25C7_250624_25%25B3%25E2_%25BF%25A9%25B8%25A7%25BD%25C3%25C1%25F0_%25BF%25EC%25C0%25AF_%25C4%25C5%25BA%25F9%25BC%25F6%252C_%25B3%25EC%25C2%25F7_%25C4%25C5%25BA%25F9%25BC%25F6_%25BF%25C2%25B6%25F3%25C0%25CE_%25B1%25D4%25B0%25DD_%25C1%25A4%25B9%25E6%25C7%25FC1.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250515_34%2F1747281389376sL0ER_JPEG%2F%25BE%25C6%25B8%25DE%25B8%25AE%25C4%25AB%25B3%25EB-%25C0%25CC%25BA%25A5%25C6%25AE_%25BD%25BA%25B8%25B6%25C6%25AE-%25C7%25C3%25B7%25B9%25C0%25CC%25BD%25BA%25BF%25EB.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250516_109%2F1747359365639aUWVw_PNG%2F%25B8%25C5%25BD%25BA%25C4%25BF%25C7%25C7_25%25B3%25E2-5%25BF%25F9-%25BF%25A9%25B8%25A7-%25BD%25C3%25C1%25F0-1%25C2%25F7-%25B8%25DE%25B4%25BA_%25BF%25E4%25B0%25C5%25C6%25AE-%25BD%25BA%25B9%25AB%25B5%25F0%252C-%25BC%25F6%25B9%25DA%25C1%25D6%25BD%25BA-3%25C1%25BE_%25BD%25BA%25B8%25B6%25C6%25AE-%25C7%25C3%25B7%25B9%25C0%25CC%25BD%25BA.png","https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250411_268%2F1744331707928fYVBo_JPEG%2F%25B8%25C5%25BD%25BA%25C4%25BF%25C7%25C7_25%25B3%25E2_4%25BF%25F9_%25BA%25BD_%25BD%25C3%25C1%25F0_%25B8%25C1%25B0%25ED_3%25C1%25BE_%25BF%25C0%25B4%25F5%25BE%25DB%25BF%25EB.jpg","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTA2MTJfNTYg%2FMDAxNzQ5NzMyODgxMjIz.f1Xsokr6lshf4AT0MZKrbIel0VVTipfpgRIwPjzGMTgg.ivWeuA7DCkn9EbsFTdNAgsg4MZlomUhKEIv9NrNU0gAg.JPEG%2F20250605_221136.jpg.jpg%3Ftype%3Dw1500_60_sharpen","https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDExMjNfMjY0%2FMDAxNzMyMzQ2MDczODc1.AnaEq7kMqBdaHCecRZqJV042I2CQVXNfjAmt-igFVF4g.8c6QhGvfzc1ZLaDGgD1DOO9E9s6Fpf6bubUcPWg3ApMg.JPEG%2F1000003699.jpg.jpg%3Ftype%3Dw1500_60_sharpen"],
+    "description": "세련된 감성과 진한 커피의 조화, 매일 들르고 싶은 매스커피 칠곡3지구점!"
   }
 ]
