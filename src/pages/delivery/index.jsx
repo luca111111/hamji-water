@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 export default function DeliveryPage() {
   const [stores, setStores] = useState([]);
@@ -16,12 +16,12 @@ export default function DeliveryPage() {
       });
   }, []);
 
-  function shuffleArray(array) {
+  const shuffleArray = (array) => {
     return array
       .map(value => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
       .map(({ value }) => value);
-  }
+  };
 
   const filteredStores =
     selectedCategory === "전체"
@@ -36,6 +36,7 @@ export default function DeliveryPage() {
     setEnlargedImage(null);
   };
 
+  // ESC 키로 닫기
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === "Escape") closeImage();
@@ -75,45 +76,52 @@ export default function DeliveryPage() {
 
       {/* 매장 리스트 */}
       <div className="space-y-8">
-        {filteredStores.map((store) => (
-          <div key={store.id} className="p-4 border rounded-lg shadow-sm">
-            <div className="overflow-x-auto whitespace-nowrap pb-2 flex gap-2">
-              {Array.isArray(store.images) &&
-                [...store.images]
-                  .sort(() => 0.5 - Math.random())
-                  .map((src, idx) => (
-                    <img
-                      key={idx}
-                      src={src}
-                      alt={`${store.name} 메뉴 ${idx + 1}`}
-                      onClick={() => handleImageClick(src)}
-                      className="h-24 w-24 object-cover rounded cursor-pointer hover:opacity-80"
-                    />
-                  ))}
-            </div>
+        {filteredStores.map((store) => {
+          // 이미지 섞기 (초기 한 번만) useMemo 활용
+          const shuffledImages = useMemo(() => {
+            return [...(store.images || [])]
+              .map(img => ({ img, sort: Math.random() }))
+              .sort((a, b) => a.sort - b.sort)
+              .map(({ img }) => img);
+          }, [store.id]);
 
-            <p className="mt-3 text-gray-700 text-sm">{store.description}</p>
-
-            <div className="flex items-center justify-between mt-5">
-              <div className="flex items-center space-x-3">
-                <img
-                  src={store.logo}
-                  alt="로고"
-                  className="rounded-full border object-cover w-10 h-10"
-                />
-                <span className="font-semibold text-gray-900">{store.name}</span>
+          return (
+            <div key={store.id} className="p-4 border rounded-lg shadow-sm">
+              <div className="overflow-x-auto whitespace-nowrap pb-2 flex gap-2">
+                {shuffledImages.map((src, idx) => (
+                  <img
+                    key={idx}
+                    src={src}
+                    alt={`${store.name} 메뉴 ${idx + 1}`}
+                    onClick={() => handleImageClick(src)}
+                    className="h-24 w-24 object-cover rounded cursor-pointer hover:opacity-80"
+                  />
+                ))}
               </div>
-              <a
-                href={store.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ml-4 bg-[#02C2C7] hover:bg-[#0199a0] text-white text-sm font-bold py-1 px-4 rounded-full"
-              >
-                주문하기
-              </a>
+
+              <p className="mt-3 text-gray-700 text-sm">{store.description}</p>
+
+              <div className="flex items-center justify-between mt-5">
+                <div className="flex items-center space-x-3">
+                  <img
+                    src={store.logo}
+                    alt="로고"
+                    className="rounded-full border object-cover w-10 h-10"
+                  />
+                  <span className="font-semibold text-gray-900">{store.name}</span>
+                </div>
+                <a
+                  href={store.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-4 bg-[#02C2C7] hover:bg-[#0199a0] text-white text-sm font-bold py-1 px-4 rounded-full"
+                >
+                  주문하기
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* 확대 이미지 모달 */}
@@ -122,16 +130,16 @@ export default function DeliveryPage() {
           className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
           onClick={closeImage}
         >
-          <div className="relative">
-            {/* 닫기 버튼 */}
+          <div className="relative" onClick={(e) => e.stopPropagation()}>
+            {/* 닫기 버튼 (이미지 내부 우측 상단) */}
             <button
               onClick={closeImage}
-              className="absolute top-[-30px] right-[-30px] text-white text-3xl font-bold bg-black bg-opacity-50 rounded-full px-3 py-1"
+              className="absolute top-2 right-2 text-white text-2xl font-bold bg-black bg-opacity-50 rounded-full px-2"
             >
               &times;
             </button>
 
-            {/* 이미지 클릭 시에도 닫힘 */}
+            {/* 이미지 클릭해도 닫힘 */}
             <img
               src={enlargedImage}
               alt="확대 이미지"
