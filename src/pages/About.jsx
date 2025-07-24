@@ -70,7 +70,7 @@ export default function About() {
 
       <section className="max-w-3xl mx-auto mt-16 text-center text-sm text-gray-500">
         <div className="flex flex-col items-center gap-8">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center text-black text-base font-semibold">
             <span className="text-xs mb-1">주최</span>
             <img src="/sponsor-logo.png" alt="주최 로고" className="h-5" />
           </div>
