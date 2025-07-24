@@ -21,7 +21,7 @@ const Unit = lazy(() => import("./pages/program/Unit"));
 export default function App() {
   return (
     <BrowserRouter>
-      <PopupBanner />
+      {/* <PopupBanner /> */}
       <Navbar />
       <Suspense fallback={<div className="p-10 text-center">로딩 중...</div>}>
         <Routes>
