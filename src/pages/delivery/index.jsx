@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 export default function DeliveryPage() {
   const [stores, setStores] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("전체");
+  const [enlargedImage, setEnlargedImage] = useState(null);
 
   const categories = ["전체", "피자,파스타", "치킨", "짜장,짬뽕", "커피,음료"];
 
@@ -27,8 +28,24 @@ export default function DeliveryPage() {
       ? stores
       : stores.filter(store => store.category === selectedCategory);
 
+  const handleImageClick = (src) => {
+    setEnlargedImage(src);
+  };
+
+  const closeImage = () => {
+    setEnlargedImage(null);
+  };
+
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") closeImage();
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
+
   return (
-    <div className="pt-[90px] px-4 bg-white min-h-screen">
+    <div className="pt-[90px] px-4 bg-white min-h-screen relative">
       <h1 className="text-2xl font-bold text-blue-600 text-center mb-6 font-hamji">
         함지맛지도(근처배달)
       </h1>
@@ -41,7 +58,7 @@ export default function DeliveryPage() {
 
       {/* 카테고리 탭 */}
       <div className="flex justify-center gap-2 flex-wrap mb-6">
-        {categories.map(cat => (
+        {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
@@ -58,9 +75,8 @@ export default function DeliveryPage() {
 
       {/* 매장 리스트 */}
       <div className="space-y-8">
-        {filteredStores.map(store => (
+        {filteredStores.map((store) => (
           <div key={store.id} className="p-4 border rounded-lg shadow-sm">
-            {/* 메뉴 이미지 랜덤 출력 */}
             <div className="overflow-x-auto whitespace-nowrap pb-2 flex gap-2">
               {Array.isArray(store.images) &&
                 [...store.images]
@@ -70,7 +86,8 @@ export default function DeliveryPage() {
                       key={idx}
                       src={src}
                       alt={`${store.name} 메뉴 ${idx + 1}`}
-                      className="h-24 w-24 object-cover rounded"
+                      onClick={() => handleImageClick(src)}
+                      className="h-24 w-24 object-cover rounded cursor-pointer hover:opacity-80"
                     />
                   ))}
             </div>
@@ -84,9 +101,7 @@ export default function DeliveryPage() {
                   alt="로고"
                   className="rounded-full border object-cover w-10 h-10"
                 />
-                <span className="font-semibold text-gray-900">
-                  {store.name}
-                </span>
+                <span className="font-semibold text-gray-900">{store.name}</span>
               </div>
               <a
                 href={store.link}
@@ -100,6 +115,32 @@ export default function DeliveryPage() {
           </div>
         ))}
       </div>
+
+      {/* 확대 이미지 모달 */}
+      {enlargedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+          onClick={closeImage}
+        >
+          <div className="relative">
+            {/* 닫기 버튼 */}
+            <button
+              onClick={closeImage}
+              className="absolute top-[-30px] right-[-30px] text-white text-3xl font-bold bg-black bg-opacity-50 rounded-full px-3 py-1"
+            >
+              &times;
+            </button>
+
+            {/* 이미지 클릭 시에도 닫힘 */}
+            <img
+              src={enlargedImage}
+              alt="확대 이미지"
+              className="max-w-[90vw] max-h-[90vh] rounded shadow-lg cursor-pointer"
+              onClick={closeImage}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
